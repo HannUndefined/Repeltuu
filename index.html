@@ -11,6 +11,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=REM:wght@700&display=swap" rel="stylesheet">
+
+
+
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="/assets/image/repeltu-icon.png" type="image/x-icon" />
 
@@ -44,34 +47,38 @@
   <hr>
 
   <div class="container-fluid text-center text-light">
-    <img class="img-fluid" src="/assets/image/repeltu-icon.png" alt="/assets/image/repeltu-icon.png">
+    <!--img class="img-fluid" src="/assets/image/repeltu-icon.png" alt="/assets/image/repeltu-icon.png"-->
 
-    <div class="text-center text-light h2" style="font-family: monospace"><strong>Selamat Datang</div>
-    
-    <div id="txt"> </div>
+    <br><br><br>
+
     <!--<div class="d-grid gap-2 d-md-flex justify-content-md-center mx-auto">
         <button class="btn btn-secondary me-md-2" type="button"><a href="/assets/html/Cerita Fiksi/list.html" class="nav-link font-mono">Cerita Fiksi</a></button>
       </div>-->
 
+    <div class="font-playpretend h1 d-flex justify-content-center">X<br>
+      <div>R</div>PL 1
+    </div>
+    <div id="jam" class="font-mono"></div>
   </div>
+
 
 
   <script>
     function startTime() {
-          const today = new Date();
-          let h = today.getHours();
-          let m = today.getMinutes();
-          let s = today.getSeconds();
-          m = checkTime(m);
-          s = checkTime(s);
-          document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
-          setTimeout(startTime, 1000);
-        }
-    
-        function checkTime(i) {
-          if (i < 10) { i = "0" + i }; // add zero in front of numbers < 10
-          return i;
-        }
+      const today = new Date();
+      let h = today.getHours();
+      let m = today.getMinutes();
+      let s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('jam').innerHTML = h + ":" + m + ":" + s;
+      setTimeout(startTime, 1000);
+    }
+
+    function checkTime(i) {
+      if (i < 10) { i = "0" + i };
+      return i;
+    }
   </script>
   <script src="js/bootstrap.js"></script>
 </body>

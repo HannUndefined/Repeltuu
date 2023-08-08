@@ -5,3 +5,12 @@
 .font-mono{
   font-family: monospace
 }
+
+@font-face{
+  font-family: play-pretend;
+  src: url(assets/font/Play_Pretend.otf);
+}
+
+.font-playpretend{
+  font-family: play-pretend;
+}
