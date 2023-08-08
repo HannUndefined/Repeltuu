@@ -6,27 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Repeltu</title>
   <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/./style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=REM:wght@700&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="/assets/image/repeltu-icon.png" type="image/x-icon" />
-  
-  
-  <style>
-    .font-rem{
-  font-family: 'REM', sans-serif;
-}
-
-.font-mono{
-  font-family: monospace
-}
-
-  </style>
 
 </head>
 
-<body class="bg-dark">
+<body class="bg-dark" onload="startTime()">
 
   <!-- Navbar Sticky(fixed-top) -->
   <nav class="border-bottom border-secondary navbar navbar-expand-md navbar-dark fixed-top bg-dark font-rem">
@@ -54,7 +43,14 @@
   <hr>
 
   <div class="container-fluid text-center text-light">
-    <img class="img-fluid" src="/assets/image/repeltu-icon.png" alt="/assets/image/repeltu-icon.png">
+    <br><br><br>
+    <div class="font-playpretend h1 d-flex justify-content-center">X<br>
+      <div>R</div>PL 1
+    </div>
+    <div id="jam" class="font-mono"></div>
+    </div>
+    
+    <br><br><br>
 
     <div class="text-center text-light h2" style="font-family: monospace"><strong>Cerita Fiksi</div>
 
@@ -66,6 +62,7 @@
 
 
   <script src="/js/bootstrap.js"></script>
+  <script src="/./script.js"></script>
 
 </body>
 
