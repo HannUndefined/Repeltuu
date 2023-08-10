@@ -14,11 +14,14 @@
       let h = today.getHours();
       let m = today.getMinutes();
       let s = today.getSeconds();
+      let dt = today.getDate();
+      let month = today.getMonth();
+      let year = today.getUTCFullYear();
       let dn = today.getDay().toString();
       m = checkTime(m);
       s = checkTime(s);
       let day = hari.forEach(function(value, key) {
-        dayHari(value, key, dn)
+        dayHari(value, key, dn, dt, month, year)
       });
       document.getElementById('jam').innerHTML = h + ":" + m + ":" + s;
       setTimeout(startTime, 1000);
@@ -29,9 +32,10 @@
       return i;
     }
     
-    function dayHari(value, key, dn) {
+    function dayHari(value, key, dn, dt, month, year) {
       let wkwk = value
       if (key == dn) {
-        document.getElementById('tanggal').innerHTML = value.toString();
+        document.getElementById('tanggal').innerHTML = value.toString() + ' ' + dt + '-' + month + '-' + year;
       }
     }
+    
